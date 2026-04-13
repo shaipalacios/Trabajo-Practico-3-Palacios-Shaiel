@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-/* 1. CONFIGURACIÓN GLOBAL (EL RESET) */ 
+/* 1. CONFIGURACIÓN GLOBAL */ 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Regla de oro del Box Model */
+    box-sizing: border-box;
 }
 
 body {
     background-color: #121212;
     color: #e0e0e0; 
-    font-family: 'Open Sans', sans-serif; /* Tipografía moderna Sans-Serif */
+    font-family: 'Open Sans', sans-serif; 
     line-height: 1.6;
 }
 
@@ -37,15 +37,15 @@ nav {
 }
 
 nav ul {
-    list-style: none; /* Sin puntitos */
-    display: flex;    /* FLEXBOX OBLIGATORIO */
+    list-style: none;
+    display: flex;    
     justify-content: center; 
-    gap: 30px;        /* Espaciado moderno */
+    gap: 30px;    
 }
 
 nav a {
     color: #ffffff;
-    text-decoration: none; /* Sin subrayado */
+    text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.9rem;
@@ -53,7 +53,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #d4af37; /* Dorado al pasar el mouse */
+    color: #d4af37;
 }
 
 /* 3. CUERPO Y LAYOUT */
@@ -66,17 +66,17 @@ main {
     gap: 30px;
 }
 
-/* Especial para el registro: que el formulario sea una sola columna centrada */
+
 .main-registro {
     display: block;
     max-width: 600px;
 }
 
-/* LA CLASE TARJETA (Consigna 3 y 5) */
+
 .tarjeta {
     background-color: #1e1e1e;
-    padding: 30px;        /* Padding para que el texto no pegue al borde */
-    margin-bottom: 25px;  /* Margin para separar bloques */
+    padding: 30px;       
+    margin-bottom: 25px;  
     border: 1px solid #333;
     border-radius: 4px;
 }
@@ -89,7 +89,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Imágenes responsivas */
+/* Imágenes */
 img {
     max-width: 100%;
     height: auto;
@@ -113,20 +113,20 @@ input[type="email"],
 input[type="password"],
 input[type="date"],
 select {
-    padding: 12px; /* Padding interno */
+    padding: 12px; 
     background-color: #262626;
     border: 1px solid #444;
     color: white;
-    width: 100%;   /* Ocupan el espacio asignado */
+    width: 100%;   
     max-width: 400px;
 }
 
 button[type="submit"] {
-    background-color: #c41212; /* Color llamativo */
+    background-color: #c41212;
     color: white;
     padding: 15px 30px;
     border: none; 
-    cursor: pointer; /* Manito */
+    cursor: pointer; 
     font-weight: bold;
     text-transform: uppercase;
     margin-top: 15px;
