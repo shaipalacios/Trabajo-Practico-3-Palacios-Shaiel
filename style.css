@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* 1. CONFIGURACIÓN GLOBAL */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0; 
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* 2. HEADER Y NAVEGACIÓN (FLEXBOX) */
+header {
+    background-color: #000000;
+    color: #c41212; 
+    text-align: center;
+    padding: 3rem 0;
+    border-bottom: 5px double #c41212; 
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
+}
+
+nav ul {
+    list-style: none; 
+    display: flex;    
+    justify-content: center; 
+    gap: 30px;     
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none; 
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37; 
+}
+
+/* 3. CUERPO Y LAYOUT */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; 
+    gap: 30px;
+}
+
+
+.main-registro {
+    display: block;
+    max-width: 600px;
+}
+
+/* LA CLASE TARJETA */
+.tarjeta {
+    background-color: #1e1e1e;
+    padding: 30px;       
+    margin-bottom: 25px; 
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #c41212;
+    border-bottom: 2px solid #d4af37; 
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5); 
+}
+
+/* 4. FORMULARIO */
+.campo {
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column; 
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"],
+input[type="date"],
+select {
+    padding: 12px; 
+    background-color: #262626;
+    border: 1px solid #444;
+    color: white;
+    width: 100%;   
+    max-width: 400px;
+}
+
+button[type="submit"] {
+    background-color: #c41212; 
+    color: white;
+    padding: 15px 30px;
+    border: none; 
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #d4af37;
+    color: black;
+}
+
+fieldset {
+    border: 1px solid #444;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 5. FOOTER */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #000;
+    color: #666;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+}
