@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción - P!ATD</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>WikiFandom - Panic! At The Disco</h1>
+        <img src="img/logo.patd.afycso.jpg" alt="Logo de Panic! At The Disco">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#miembros">Miembros</a></li>
+            <li><a href="index.html#historia">Historia</a></li>
+            <li><a href="index.html#discografía">Discografía</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-registro">
+        <section class="tarjeta">
+            <h2>Inscripción al Fan Club</h2>
+            <p>Completá tus datos para recibir novedades de la banda.</p>
+
+            <form action="registro.html" method="get">
+                <div class="campo">
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username" placeholder="Slayer99">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <div class="campo">
+                    <label for="fecha">Fecha de Nacimiento:</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="campo">
+                    <label for="album">Álbum Favorito:</label>
+                    <select id="album" name="album">
+                        <option value="fever">A Fever You Can't Sweat Out</option>
+                        <option value="pretty">Pretty. Odd.</option>
+                        <option value="vices">Vices & Virtues</option>
+                        <option value="bachelor">Death of a Bachelor</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Tipo de Membresía:</legend>
+                    <input type="radio" id="gratis" name="membresia" value="gratis">
+                    <label for="gratis">Membresía Gratuita</label>
+                    <br>
+                    <input type="radio" id="vip" name="membresia" value="vip">
+                    <label for="vip">Membresía VIP</label>
+                </fieldset>
+
+                <div class="campo-check">
+                    <input type="checkbox" id="terminos" name="terminos" checked>
+                    <label for="terminos">Acepto recibir novedades en mi correo</label>
+                </div>
+
+                <button type="submit" class="boton-registro">Registrarse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wiki Fandom de P!ATD. Creado por Shaiel Palacios.</p>
+    </footer>
+</body>
+</html>
